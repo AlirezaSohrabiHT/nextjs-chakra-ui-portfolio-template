@@ -17,7 +17,10 @@ const Home = () => {
 
   const title = "Home";
   const description = seo.description;
-
+  const imageStyle = {
+    borderRadius: '50%',
+    border: '1px solid #fff',
+  }
   return (
     <>
       <NextSeo
@@ -47,7 +50,8 @@ const Home = () => {
         py="4"
       >
         <NextImage
-          src="/bighead.svg"
+          src="/profile.png"
+          style={imageStyle} 
           width="350"
           height="350"
           alt="avatar bigheads"
@@ -57,7 +61,7 @@ const Home = () => {
         />
         <Box>
           <Heading as="h1" fontSize="2xl" fontWeight="500" py="2">
-            Hi, I'm John Doe{" "}
+            Hi, I'm Alireza Sohrabi{" "}
             <span role="img" aria-label="hand">
               👋🏻
             </span>
@@ -66,19 +70,18 @@ const Home = () => {
             <Text as="span" color={color}>
               Building
             </Text>{" "}
-            digital products, Brands, And experience.
+            Web Platforms, Single-Page Applications, and Maintenance.
           </Heading>
           <Text py="4">
             A{" "}
             <Text as="span" fontWeight="600">
-              web designer
+            full-stack web developer 
             </Text>{" "}
             and{" "}
             <Text as="span" fontWeight="600">
-              front-end web developer
+            system administrator
             </Text>{" "}
-            based in the US, I specialize in UI/UX design, Responsive web
-            design, And accessibility.
+            based in the IRAN, I specialize in creating scalable web solutions, responsive design, and seamless user experiences.
           </Text>
           <Button
             colorScheme="telegram"
@@ -101,12 +104,13 @@ const Home = () => {
       >
         {data.map((item, index) => (
           <Box
-            d={{ lg: "flex" }}
+            display={{ base: "flex", lg: "flex" }}
             justifyContent={{ lg: "center" }}
             alignItems={{ lg: "center" }}
-            flexDir={{ lg: isOdd(index) == 1 && "row-reverse" }}
+            flexDir={{ base: "column", lg: isOdd(index) ? "row-reverse" : "row" }}
             key={index}
           >
+           
             <Box
               w={{ base: "80%", lg: "35%" }}
               mx={{ base: "auto", lg: "0" }}
