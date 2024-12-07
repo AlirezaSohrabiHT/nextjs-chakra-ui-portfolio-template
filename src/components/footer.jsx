@@ -5,9 +5,9 @@ import { MAX_WIDTH } from "config";
 
 // Fell free to add your social media accounts!
 const socialAccounts = [
-  { icon: FaGithub, path: "https://github.com/", title: "Github" },
-  { icon: FaLinkedin, path: "https://www.linkedin.com/", title: "Linkedin" },
-  { icon: FaInstagram, path: "https://www.instagram.com/", title: "Instagram" },
+  { icon: FaGithub, path: "https://github.com/AlirezaSohrabiHT", title: "Github" },
+  { icon: FaLinkedin, path: "https://www.linkedin.com/in/alireza-sohrabi-ht/", title: "Linkedin" },
+  { icon: FaInstagram, path: "https://www.instagram.com/alireza.sohrabi.ht/profilecard/?igsh=MWZuN25raWFzaGFoMQ==", title: "Instagram" },
 ];
 
 const Footer = () => {
@@ -40,7 +40,7 @@ const Footer = () => {
             </ChakraLink>
           ))}
         </Box>
-        <Box py="2">
+        {/* <Box py="2">
           <Text>
             Built with{" "}
             <span role="img" aria-label="red heart">
@@ -74,9 +74,9 @@ const Footer = () => {
               Vercel.
             </ChakraLink>
           </Text>
-        </Box>
-        <Box py="2">
-          {/* <ChakraLink
+        </Box> */}
+        {/* <Box py="2">
+          <ChakraLink
             href="https://github.com/imadatyatalah/nextjs-chakra-ui-portfolio-template"
             aria-label="source code"
             isExternal
@@ -84,8 +84,8 @@ const Footer = () => {
             <Button aria-label="source code">
               <Icon as={FaCode} w="6" h="6" />
             </Button>
-          </ChakraLink> */}
-        </Box>
+          </ChakraLink>
+        </Box> */}
       </Box>
     </Box>
   );
