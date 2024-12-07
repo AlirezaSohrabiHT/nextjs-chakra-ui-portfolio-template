@@ -17,10 +17,6 @@ const Home = () => {
 
   const title = "Home";
   const description = seo.description;
-  const imageStyle = {
-    borderRadius: '50%',
-    border: '1px solid #fff',
-  }
   return (
     <>
       <NextSeo
@@ -43,15 +39,24 @@ const Home = () => {
 
       <Box
         as="section"
-        d="flex"
+        display="flex"
         alignItems="center"
+        justifyContent="center"
         flexDir="column"
         textAlign="center"
         py="4"
       >
+<Box
+  display="flex"
+  alignItems="center"
+  justifyContent="center"
+  borderRadius="full"
+  overflow="hidden"
+  width="350px"
+  height="350px"
+>
         <NextImage
           src="/profile.png"
-          style={imageStyle} 
           width="350"
           height="350"
           alt="avatar bigheads"
@@ -59,6 +64,7 @@ const Home = () => {
           blurDataURL="L5I~of#i004mgjw]-4XA00?wL#xu"
           priority
         />
+      </Box>
         <Box>
           <Heading as="h1" fontSize="2xl" fontWeight="500" py="2">
             Hi, I'm Alireza Sohrabi{" "}
@@ -129,7 +135,7 @@ const Home = () => {
 
             <Box w={{ lg: "50%" }}>
               <Heading as="h1">{item.title}</Heading>
-              <Text py="4">{item.description}</Text>
+              <Text py="4" style={{textAlign: 'justify'}}>{item.description}</Text>
             </Box>
           </Box>
         ))}

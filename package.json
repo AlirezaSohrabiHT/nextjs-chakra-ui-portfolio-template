@@ -1,15 +1,15 @@
 {
-  "name": "portfolio-boilerplate-nextjs",
+  "name": "alireza-sohrabi-portfolio",
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/imadatyatalah/portfolio-boilerplate-nextjs"
+    "url": "https://github.com/AlirezaSohrabiHT/nextjs-chakra-ui-portfolio-template"
   },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -H 0.0.0.0 -p 80",
     "postbuild": "next-sitemap --config next-sitemap.js",
     "prettier:format": "prettier --write .",
     "prettier:check": "prettier --check ."

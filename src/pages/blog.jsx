@@ -106,7 +106,19 @@ const Blog = ({ posts }) => {
           })}
         </Flex>
 
-        {blogPost.length > 0 ? (
+        <Alert
+            status="info"
+            borderRadius="md"
+            d="flex"
+            justifyContent="center"
+            mx="auto"
+            maxWidth="500px"
+            fontWeight="500"
+          >
+            <AlertIcon />
+            No blog post has been found!
+          </Alert>
+        {/* {blogPost.length > 0 ? (
           <BlogPost posts={blogPost} />
         ) : (
           <Alert
@@ -121,7 +133,7 @@ const Blog = ({ posts }) => {
             <AlertIcon />
             No blog post has been found!
           </Alert>
-        )}
+        )} */}
       </Box>
     </>
   );

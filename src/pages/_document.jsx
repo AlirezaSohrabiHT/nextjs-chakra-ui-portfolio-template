@@ -8,7 +8,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link
+          {/* <link
             rel="shortcut icon"
             href="/favicon/favicon.ico"
             type="image/x-icon"
@@ -30,7 +30,7 @@ class MyDocument extends Document {
             sizes="16x16"
             href="/favicon/favicon-16x16.png"
           />
-          <link rel="manifest" href="/favicon/site.webmanifest" />
+          <link rel="manifest" href="/favicon/site.webmanifest" /> */}
         </Head>
         <body>
           <ColorModeScript

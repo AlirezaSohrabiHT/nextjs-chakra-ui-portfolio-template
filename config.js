@@ -1,8 +1,8 @@
 export const seo = {
-  title: "Portfolio Boilerplate",
+  title: "Alireza Sohrabi - Full-Stack Developer",
   description:
-    "A Next.js boilerplate for building your portfolio as quick as possible",
-  canonical: "https://portfolio-boilerplate-nextjs.vercel.app/",
+    "Discover the portfolio of Alireza Sohrabi, a full-stack developer with expertise in web platforms, single-page applications, and scalable solutions.",
+  canonical: "https://mework.ir/",
 };
 
 export const data = [
@@ -13,15 +13,15 @@ export const data = [
     image: "/tools.svg",
   },
   {
-    title: "Your title",
+    title: "Work Experience Across Diverse Roles",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempora dolorem doloribus repudiandae, possimus quod quas. Ipsum culpa repellat dolorem vero odit iste delectus id, sed iure facere, animi suscipit.",
+      "I have gained valuable experience working in different roles and companies. At IranServer, during a 4-month internship as a System Developer, I learned extensively about servers, Linux, web servers, and related technologies. At Joorchin Creative Agency, I contributed as a developer, creating both small and large websites using PHP and WordPress. At Exir Firm Company, I worked as a developer on a variety of projects, including CRM systems, device tracking programs, and POS applications, focusing on practical solutions for complex needs.",
     image: "/work.svg",
   },
   {
-    title: "Your title",
+    title: "Educational Background",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempora dolorem doloribus repudiandae, possimus quod quas. Ipsum culpa repellat dolorem vero odit iste delectus id, sed iure facere, animi suscipit.",
+      "I hold a Bachelor's degree in Computer Engineering from Zabol University, graduating with a Grade of 15.13. Currently, I am pursuing a Master's degree in Network Security at Salman Farsi Higher Education Institute, focusing on advanced topics in securing digital systems and infrastructure.",
     image: "/uni.svg",
   },
 ];
