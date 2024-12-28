@@ -1,4 +1,3 @@
-import Image from "next/image";
 
 import {
   CustomLink,
@@ -24,7 +23,6 @@ const MDXComponents = {
   ol: OrderedList,
   li: ListItem,
   inlineCode: InlineCode,
-  Image,
 };
 
 export default MDXComponents;

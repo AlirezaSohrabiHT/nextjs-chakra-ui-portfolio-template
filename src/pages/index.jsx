@@ -6,7 +6,6 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { NextSeo } from "next-seo";
-import NextImage from "next/image";
 
 import { seo, data } from "config";
 
@@ -55,14 +54,16 @@ const Home = () => {
   width="350px"
   height="350px"
 >
-        <NextImage
+        <img
           src="/profile.png"
           width="350"
           height="350"
           alt="avatar bigheads"
-          placeholder="blur"
-          blurDataURL="L5I~of#i004mgjw]-4XA00?wL#xu"
-          priority
+          // style={{
+          //   filter: 'blur(5px)', // Approximate blur effect
+          //   display: 'block',
+          // }}
+          loading="eager"
         />
       </Box>
         <Box>
@@ -123,14 +124,18 @@ const Home = () => {
               pl={{ lg: isOdd(index) == 1 && "10" }}
               pr={{ lg: isOdd(index) == 0 && "10" }}
             >
-              <NextImage
-                src={item.image}
-                width="500"
-                height="500"
-                alt={item.title}
-                placeholder="blur"
-                blurDataURL="L8LE.{~60000_3V@ITx^00t:V?-P"
-              />
+<img
+  src={item.image}
+  width="500"
+  height="500"
+  alt={item.title}
+  // style={{
+  //   filter: 'blur(5px)', // Simulates the blur placeholder effect
+  //   display: 'block',
+  // }}
+  loading="lazy" // Lazy-loads the image for performance
+/>
+
             </Box>
 
             <Box w={{ lg: "50%" }}>
